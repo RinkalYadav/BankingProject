@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+        h4 {
+            color: #721c24;
+            background-color: #f5c6cb;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: left;
+            width: 300px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h4>Please fill all the details correctly</h4>
+    <br><br>
+    <form action="Register">
+        <label>Name of the Customer</label><br>
+        <input type="text" name="cname" required><br><br>
+
+        <label>Email of the Customer</label><br>
+        <input type="text" name="email" required><br><br>
+        
+        <label>Phone Number of the Customer</label><br>
+        <input type="text" name="phone" required><br><br>
+
+        <label>Preferred Customer ID</label><br>
+        <input type="text" name="cid" required><br><br>
+
+        <label>Starting Balance</label><br>
+        <input type="text" name="bal" required><br><br>
+
+        <label>Preferred Password</label><br>
+        <input type="password" name="pwd" required><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
